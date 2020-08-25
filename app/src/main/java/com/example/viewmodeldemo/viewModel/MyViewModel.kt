@@ -2,8 +2,9 @@ package com.example.viewmodeldemo.viewModel
 
 import androidx.lifecycle.ViewModel
 
-class MyViewModel: ViewModel() {
+class MyViewModel(name: String): ViewModel() {
 
+    val textName: String = name
     var count = 0
 
     fun numberIncrement() {
@@ -13,4 +14,8 @@ class MyViewModel: ViewModel() {
     fun numberDecrement() {
         count--
     }
+
+    /*init {
+
+    }*/
 }
